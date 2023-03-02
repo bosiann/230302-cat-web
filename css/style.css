@@ -27,12 +27,13 @@
 .social-icon {
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 
 .logo {
   width: 82px;
   height: 61px;
-
+  cursor: pointer;
   font-family: "Tuffy";
   font-style: normal;
   font-weight: 700;
@@ -74,11 +75,13 @@ header {
   width: 19px;
   height: 19px;
   margin-left: 80px;
+  cursor: pointer;
 }
 
-.nav-active {
+.nav-active:hover {
   color: #efc862;
   text-decoration-line: underline;
+  transition: all 0.5s ease-in-out;
 }
 
 /* main */
@@ -122,6 +125,7 @@ main {
 .content-text {
   font-size: 13px;
   color: #646464;
+  cursor: pointer;
 }
 .content-acctive {
   font-size: 21px;
