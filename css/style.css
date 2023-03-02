@@ -48,6 +48,8 @@
 /* right */
 .right {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 /* header */
 header {
@@ -73,4 +75,68 @@ header {
 .nav-active {
   color: #efc862;
   text-decoration-line: underline;
+}
+
+/* main */
+main {
+  background-color: rgb(224, 143, 143);
+  margin-left: 79px;
+  margin-right: 120px;
+  height: 378px;
+  display: flex;
+  justify-content: space-between;
+}
+/* main-left */
+.main-left {
+  width: 320px;
+}
+.title-border-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+.title-border-yellow {
+  width: 50%;
+  border-bottom: 1px solid #efc862;
+}
+.title-border-dark {
+  width: 50%;
+  border-bottom: 1px solid #707070;
+}
+
+.left-title-font {
+  font-size: 28px;
+  color: #ffffff;
+}
+.left-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.content-text {
+  font-size: 13px;
+  color: #646464;
+}
+.content-acctive {
+  font-size: 21px;
+  color: #ffffff;
+}
+
+/* main-right */
+.main-right {
+  width: 400px;
+  height: 378px;
+  background-color: #646464;
+}
+.right-title {
+  font-size: 72px;
+  font-family: "Airal";
+  line-height: 72px;
+  font-style: normal;
+  color: #ffffff;
+}
+.right-content {
+  font-size: 21px;
+  color: #ffffff;
 }
