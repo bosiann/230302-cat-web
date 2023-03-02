@@ -1,2 +1,45 @@
 .container {
+  background: linear-gradient(180deg, #313132 0%, #161618 100%);
+  width: 100vw;
+  height: 100vh;
+}
+
+/* left */
+.left {
+  width: 163px;
+  height: 100%;
+  background-color: rgb(151, 118, 77);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+.social-icons {
+  height: 124px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.logo {
+  width: 82px;
+  height: 61px;
+
+  font-family: "Tuffy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 41px;
+  line-height: 61px;
+  /* identical to box height */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
 }
