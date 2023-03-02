@@ -2,18 +2,19 @@
   background: linear-gradient(180deg, #313132 0%, #161618 100%);
   width: 100vw;
   height: 100vh;
+  display: flex;
 }
 
 /* left */
 .left {
   width: 163px;
   height: 100%;
-  background-color: rgb(151, 118, 77);
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
   padding: 40px;
+  border-right: 1px solid #707070;
 }
 .social-icons {
   height: 124px;
@@ -42,4 +43,34 @@
   text-transform: uppercase;
 
   color: #ffffff;
+}
+
+/* right */
+.right {
+  width: 100%;
+}
+/* header */
+header {
+  /* background-color: red; */
+  width: 100%;
+  height: 105px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 40px 55px;
+}
+.nav-links {
+  color: #ffffff;
+  display: flex;
+  column-gap: 55px;
+}
+.search-icon {
+  width: 19px;
+  height: 19px;
+  margin-left: 80px;
+}
+
+.nav-active {
+  color: #efc862;
+  text-decoration-line: underline;
 }
