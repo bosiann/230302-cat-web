@@ -15,6 +15,7 @@
   align-items: center;
   padding: 40px;
   border-right: 1px solid #707070;
+  z-index: 1;
 }
 .social-icons {
   height: 124px;
@@ -50,7 +51,10 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
 }
+
 /* header */
 header {
   /* background-color: red; */
@@ -79,9 +83,10 @@ header {
 
 /* main */
 main {
-  background-color: rgb(224, 143, 143);
+  /* background-color: rgb(224, 143, 143); */
   margin-left: 79px;
   margin-right: 120px;
+  margin-top: 120px;
   height: 378px;
   display: flex;
   justify-content: space-between;
@@ -127,7 +132,7 @@ main {
 .main-right {
   width: 400px;
   height: 378px;
-  background-color: #646464;
+  /* background-color: #646464; */
 }
 .right-title {
   font-size: 72px;
@@ -139,4 +144,23 @@ main {
 .right-content {
   font-size: 21px;
   color: #ffffff;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  height: 204px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
+  padding: 0px 40px;
+}
+
+.bg {
+  position: absolute;
+
+  height: 100vh;
+  left: calc(50% - 948.11px / 2 + 76.05px);
+  bottom: 0px;
+  z-index: 0;
 }
