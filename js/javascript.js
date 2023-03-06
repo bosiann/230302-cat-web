@@ -17,3 +17,10 @@
 // contentText.forEach((item, index) => {
 //   item.addEventListener("click", () => {});
 // });
+const Btn = document.querySelectorAll(".content-text");
+Btn.forEach((item) => {
+  item.addEventListener("click", () => {
+    Btn.forEach((item2) => item2.classList.remove("content-acctive"));
+    item.classList.add("content-acctive");
+  });
+});

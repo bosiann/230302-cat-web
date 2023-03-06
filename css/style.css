@@ -1,5 +1,6 @@
 body {
   /* 防止溢出 */
+  position: relative;
   overflow: hidden;
 }
 .container {
@@ -106,6 +107,8 @@ main {
 /* main-left */
 .main-left {
   width: 320px;
+  display: flex;
+  flex-direction: column;
 }
 .title-border-group {
   display: flex;
@@ -127,6 +130,7 @@ main {
   color: #ffffff;
 }
 .left-content {
+  /* background-color: red; */
   display: flex;
   flex-direction: column;
   row-gap: 8px;
@@ -136,6 +140,7 @@ main {
   font-size: 13px;
   color: #646464;
   cursor: pointer;
+  transition: 0.25s;
 }
 .content-acctive {
   font-size: 21px;
@@ -183,7 +188,6 @@ footer {
 }
 /* footer-left-information */
 .footer-left-information {
-  /* height: 100%; */
   width: 100%;
   margin-top: 38px;
   color: #ffffff;
