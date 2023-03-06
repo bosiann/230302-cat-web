@@ -83,16 +83,15 @@ header {
   cursor: pointer;
 }
 
-.nav-active {
+.nav-in {
   color: #efc862;
   text-decoration-line: underline;
 }
 /* 滑鼠移動觸發條件 */
-/* .nav-active:hover {
+.nav-active:hover {
   color: #efc862;
-  text-decoration-line: underline;
-  transition: all 0.5s ease-in-out;
-} */
+  transition: 0.25s;
+}
 
 /* main */
 main {
@@ -111,30 +110,53 @@ main {
   flex-direction: column;
 }
 .title-border-group {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
   margin-top: 8px;
-  margin-bottom: 24px;
+  margin-bottom: 35px;
+  width: 100%;
+  height: 2px;
+  overflow: hidden;
 }
 .title-border-yellow {
+  position: absolute;
+  top: 0px;
   width: 50%;
   border-bottom: 1px solid #efc862;
+  z-index: 2;
+  animation: motionline 3s ease-in-out infinite;
 }
+@keyframes motionline {
+  from {
+    transform: translateX(-160px);
+    width: 50%;
+  }
+  to {
+    transform: translateX(370px);
+    width: 60%;
+  }
+}
+
 .title-border-dark {
-  width: 50%;
+  position: absolute;
+  top: 0px;
+  width: 100%;
   border-bottom: 1px solid #707070;
+  z-index: 1;
 }
 
 .left-title-font {
   font-size: 28px;
   color: #ffffff;
+  transition: 0.25s;
 }
+
 .left-content {
   /* background-color: red; */
   display: flex;
   flex-direction: column;
   row-gap: 8px;
 }
+/* 文字按鈕區 */
 .content-text {
   font-family: "Noto Sans CJK TC";
   font-size: 13px;
@@ -142,7 +164,8 @@ main {
   cursor: pointer;
   transition: 0.25s;
 }
-.content-acctive {
+/* button Active */
+.content-active {
   font-size: 21px;
   color: #ffffff;
 }
@@ -264,6 +287,8 @@ footer {
   font-size: 16px;
   line-height: 22px;
   color: #efc862;
+  text-decoration-line: underline;
+  cursor: pointer;
 }
 
 /* Background Picture */
